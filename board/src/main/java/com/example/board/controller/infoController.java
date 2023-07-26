@@ -3,6 +3,7 @@ package com.example.board.controller;
 
 import com.example.board.dto.BoardDto;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,6 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RestController
 public class infoController {
 
+    @CrossOrigin
     @GetMapping("/info")
     public Object getBoardInfo(){
 //     ModelAndView mv = new ModelAndView("/board/dataGrid");
@@ -26,9 +28,9 @@ public class infoController {
         boardDto.setBbsID(1);
         boardDto.setBbsTitle("title");
         boardDto.setUserID("bryan");
+        boardDto.setBbsDate("2023");
         boardDto.setBbsContent("hello");
         boardDto.setBbsAvailable(1);
-        boardDto.setBbsDate("2023");
         boardDto.setFileName("1");
         boardDto.setFileRealName("1");
         return boardDto;
