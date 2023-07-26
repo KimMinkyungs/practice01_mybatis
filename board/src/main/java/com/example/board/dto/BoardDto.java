@@ -14,6 +14,20 @@ public class BoardDto {
         return bbsID;
     }
 
+    @Override
+    public String toString() {
+        return "BoardDto{" +
+                "bbsID=" + bbsID +
+                ", bbsTitle='" + bbsTitle + '\'' +
+                ", userID='" + userID + '\'' +
+                ", bbsDate='" + bbsDate + '\'' +
+                ", bbsContent='" + bbsContent + '\'' +
+                ", bbsAvailable=" + bbsAvailable +
+                ", fileName='" + fileName + '\'' +
+                ", fileRealName='" + fileRealName + '\'' +
+                '}';
+    }
+
     public void setBbsID(int bbsID) {
         this.bbsID = bbsID;
     }

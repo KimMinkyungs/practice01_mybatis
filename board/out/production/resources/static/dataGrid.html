@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Basic DataGrid - jQuery EasyUI Demo</title>
+  <link rel="stylesheet" type="text/css" href="../../themes/default/easyui.css">
+  <link rel="stylesheet" type="text/css" href="../../themes/icon.css">
+  <link rel="stylesheet" type="text/css" href="../demo.css">
+  <script type="text/javascript" src="../../jquery.min.js"></script>
+  <script type="text/javascript" src="../../jquery.easyui.min.js"></script>
+</head>
+<body>
+<h2>Basic DataGrid</h2>
+<p>The DataGrid is created from markup, no JavaScript code needed.</p>
+<div style="margin:20px 0;"></div>
+
+<table class="easyui-datagrid" title="Basic DataGrid" style="width:700px;height:250px"
+       data-options="singleSelect:true,collapsible:true,url:'http://localhost:8080/info',method:'get'">
+  <thead>
+  <tr>
+    <th data-options="field:'bbsID',width:40">bbsID</th>
+    <th data-options="field:'bbsTitle',width:80">bbsTitle</th>
+    <th data-options="field:'userID',width:60,align:'right'">userID</th>
+    <th data-options="field:'bbsDate',width:80,align:'right'">bbsDate</th>
+    <th data-options="field:'bbsContent',width:250">bbsContent</th>
+    <th data-options="field:'bbsAvailable',width:250">bbsAvailable</th>
+    <th data-options="field:'fileName',width:60,align:'center'">fileName</th>
+    <th data-options="field:'fileRealName',width:60,align:'center'">fileRealName</th>
+  </tr>
+  </thead>
+</table>
+
+</body>
+</html>
